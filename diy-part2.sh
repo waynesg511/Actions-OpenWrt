@@ -27,10 +27,10 @@ git clone https://github.com/destan19/OpenAppFilter.git package/oaf
 # 获取luci-app-argon-config
 git clone https://github.com/waynesg/luci-app-argon-config.git package/argon-config
 # 获取灵缇加速器
-git clone https://github.com/Droid-MAX/lingtigameacc.git package/lingti
-git clone https://github.com/Droid-MAX/luci-app-lingtigameacc.git package/luci-lingti
+git clone https://github.com/BCYDTZ/LingTiGameAcc.git package/lingti
+git clone https://github.com/BCYDTZ/luci-app-LingTiGameAcc.git package/luci-lingti
 # 获取广告屏蔽大师plus
-git clone https://github.com/garypang13/luci-app-adblock-plus.git package/adblockplus
+git clone https://github.com/small-5/luci-app-adblock-plus.git package/adblockplus
 # 获取高级设置
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/adv
 # 获取自动关机
