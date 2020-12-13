@@ -27,8 +27,8 @@ git clone https://github.com/destan19/OpenAppFilter.git package/oaf
 # 获取luci-app-argon-config
 git clone https://github.com/waynesg/luci-app-argon-config.git package/argon-config
 # 获取灵缇加速器
-git clone https://github.com/BCYDTZ/LingTiGameAcc.git package/lingti
-git clone https://github.com/BCYDTZ/luci-app-LingTiGameAcc.git package/luci-lingti
+git clone https://github.com/BCYDTZ/LingTiGameAcc.git package/lingtigame
+git clone https://github.com/BCYDTZ/luci-app-LingTiGameAcc.git package/luci-app-lingtigame
 # 获取广告屏蔽大师plus
 git clone https://github.com/small-5/luci-app-adblock-plus.git package/adblockplus
 # 获取高级设置
