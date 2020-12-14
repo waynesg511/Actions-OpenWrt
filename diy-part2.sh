@@ -23,7 +23,7 @@ git clone https://github.com/waynesg/luci-app-pptp-server.git package/pptp
 # 获取luci-app-oaf
 git clone https://github.com/destan19/OpenAppFilter.git package/oaf
 # 获取luci-app-ipsec
-# git clone https://github.com/waynesg/luci-app-ipsec-vpnserver-manyusers.git package/luci-app-ipsec-vpnserver-manyusers
+git clone https://github.com/waynesg/luci-app-ipsec-vpnserver-manyusers.git package/luci-app-ipsec-vpnserver-manyusers
 # 获取luci-app-argon-config
 git clone https://github.com/waynesg/luci-app-argon-config.git package/argon-config
 # 获取灵缇加速器
@@ -36,8 +36,8 @@ git clone https://github.com/sirpdboy/luci-app-advanced.git package/adv
 # 获取自动关机
 git clone https://github.com/sirpdboy/luci-app-autopoweroff.git package/autopwoff
 # 获取hello world和依赖
-# git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
-# git clone https://github.com/jerrykuku/luci-app-vssr package/diy-packages/helloworld/luci-app-vssr
+git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr package/diy-packages/helloworld/luci-app-vssr
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #=================================================
