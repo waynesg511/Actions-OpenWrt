@@ -25,7 +25,7 @@ git clone https://github.com/destan19/OpenAppFilter.git package/oaf
 # 获取luci-app-ipsec
 # git clone https://github.com/waynesg/luci-app-ipsec-vpnserver-manyusers.git package/luci-app-ipsec-vpnserver-manyusers
 # 获取luci-app-argon-config
-git clone https://github.com/waynesg/luci-app-argon-config.git package/argon-config
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/argon-config
 # 获取灵缇加速器
 # git clone https://github.com/BCYDTZ/LingTiGameAcc.git package/lingtigame
 # git clone https://github.com/BCYDTZ/luci-app-LingTiGameAcc.git package/luci-app-lingtigame
