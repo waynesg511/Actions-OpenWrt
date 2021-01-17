@@ -16,6 +16,8 @@ git clone https://github.com/kenzok8/openwrt-packages.git  package/openwrt-packa
 git clone https://github.com/kenzok8/small.git  package/openwrt-small
 # 获取luci-app-bypass
 git clone https://github.com/garypang13/luci-app-bypass.git package/bypass
+# 获取luci-app-dnsfilter
+git clone https://github.com/garypang13/luci-app-dnsfilter.git package/dnsfilter
 # 获取luci-app-serverchan
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 # 获取luci-app-poweroff
