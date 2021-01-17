@@ -14,6 +14,8 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 git clone https://github.com/kenzok8/openwrt-packages.git  package/openwrt-packages
 git clone https://github.com/kenzok8/small.git  package/openwrt-small
+# 获取luci-app-bypass
+git clone https://github.com/garypang13/luci-app-bypass.git package/bypass
 # 获取luci-app-serverchan
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 # 获取luci-app-poweroff
