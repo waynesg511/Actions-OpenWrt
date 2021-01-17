@@ -42,7 +42,7 @@ git clone https://github.com/sirpdboy/luci-app-advanced.git package/adv
 # 获取自动关机
 git clone https://github.com/sirpdboy/luci-app-autopoweroff.git package/autopwoff
 # 获取hello world和依赖
-# git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
+git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
 # git clone https://github.com/jerrykuku/luci-app-vssr package/diy-packages/helloworld/luci-app-vssr
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
