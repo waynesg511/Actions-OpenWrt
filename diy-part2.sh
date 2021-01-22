@@ -16,6 +16,7 @@ git clone https://github.com/kenzok8/openwrt-packages.git  package/openwrt-packa
 git clone https://github.com/kenzok8/small.git  package/openwrt-small
 # 获取luci-app-bypass
 git clone https://github.com/garypang13/luci-app-bypass.git package/bypass
+git clone https://github.com/garypang13/openwrt-packages/tree/master/lua-maxminddb package/lua-maxminddb
 # 获取luci-app-dnsfilter
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/dnsfilter
 # 获取luci-app-serverchan
@@ -42,7 +43,7 @@ git clone https://github.com/sirpdboy/luci-app-advanced.git package/adv
 # 获取自动关机
 git clone https://github.com/sirpdboy/luci-app-autopoweroff.git package/autopwoff
 # 获取hello world和依赖
-git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
+# git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
 # git clone https://github.com/jerrykuku/luci-app-vssr package/diy-packages/helloworld/luci-app-vssr
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
