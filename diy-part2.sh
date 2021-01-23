@@ -26,7 +26,7 @@ git clone https://github.com/waynesg/luci-app-poweroff.git package/poweroff
 # 获取luci-app-pptp-server
 git clone https://github.com/waynesg/luci-app-pptp-server.git package/pptp
 # 获取luci-app-oaf
-git clone https://github.com/destan19/OpenAppFilter.git package/oaf
+# git clone https://github.com/destan19/OpenAppFilter.git package/oaf
 # 获取luci-app-ipsec
 # git clone https://github.com/waynesg/luci-app-ipsec-vpnserver-manyusers.git package/luci-app-ipsec-vpnserver-manyusers
 # 获取luci-app-argon-config
