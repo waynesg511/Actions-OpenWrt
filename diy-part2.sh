@@ -35,7 +35,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/argon-c
 # git clone https://github.com/BCYDTZ/LingTiGameAcc.git package/lingtigame
 # git clone https://github.com/BCYDTZ/luci-app-LingTiGameAcc.git package/luci-app-lingtigame
 # 获取KoolProxyR Plus+
-git clone https://github.com/tcsr200722/luci-app-ledeproxy-2.git package/ledeproxy
+git clone https://github.com/godros/luci-app-godproxy.git package/ledeproxy
 # 获取高级设置
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/adv
 # 获取自动关机
