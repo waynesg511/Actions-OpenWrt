@@ -11,7 +11,6 @@
 #
 #移除argon主题
 rm -rf package/lean/luci-theme-argon
-rm -rf package/lean/shadowsocksr-libev
 
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
