@@ -11,6 +11,17 @@
 #
 #移除argon主题
 rm -rf package/lean/luci-theme-argon
+#移除v2ray等
+rm -rf ./package/lean/dns2socks
+rm -rf ./package/lean/ipt2socks
+rm -rf ./package/lean/kcptun
+rm -rf ./package/lean/microsocks
+rm -rf ./package/lean/shadowsocksr-libev
+rm -rf ./package/lean/simple-obfs
+rm -rf ./package/lean/tcping
+rm -rf ./package/lean/trojan
+rm -rf ./package/lean/v2ray
+rm -rf ./package/lean/v2ray-plugin
 
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
