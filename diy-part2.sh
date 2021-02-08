@@ -10,18 +10,18 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 #移除argon主题
-rm -rf package/lean/luci-theme-argon
+# rm -rf package/lean/luci-theme-argon
 #移除v2ray等
-rm -rf ./package/lean/dns2socks
-rm -rf ./package/lean/ipt2socks
-rm -rf ./package/lean/kcptun
-rm -rf ./package/lean/microsocks
-rm -rf ./package/lean/shadowsocksr-libev
-rm -rf ./package/lean/simple-obfs
-rm -rf ./package/lean/tcping
-rm -rf ./package/lean/trojan
-rm -rf ./package/lean/v2ray
-rm -rf ./package/lean/v2ray-plugin
+rm -rf /package/lean/dns2socks
+rm -rf /package/lean/ipt2socks
+rm -rf /package/lean/kcptun
+rm -rf /package/lean/microsocks
+rm -rf /package/lean/shadowsocksr-libev
+rm -rf /package/lean/simple-obfs
+rm -rf /package/lean/tcping
+rm -rf /package/lean/trojan
+rm -rf /package/lean/v2ray
+rm -rf /package/lean/v2ray-plugin
 
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
@@ -43,6 +43,7 @@ svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-advanced packa
 svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-autopoweroff package/wayne/luci-app-autopoweroff
 # Bypass
 svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-bypass package/wayne/luci-app-bypass
+svn co https://github.com/waynesg/OpenWrt-Software/trunk/openwrt-passwall/tcping package/wayne/tcping
 svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/wayne/lua-maxminddb
 svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns package/wayne/smartdns
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
@@ -54,7 +55,7 @@ svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-dockerman pack
 # Godproxy去广告
 svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-godproxy package/wayne/luci-app-godproxy
 # PassWall
-svn co https://github.com/waynesg/OpenWrt-Software/trunk/openwrt-passwall package/wayne/openwrt-passwall
+# svn co https://github.com/waynesg/OpenWrt-Software/trunk/openwrt-passwall package/wayne/openwrt-passwall
 # Openclash
 svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-openclash package/wayne/luci-app-openclash
 # 关机脚本
