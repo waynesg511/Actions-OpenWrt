@@ -16,9 +16,14 @@ git clone https://github.com/kenzok8/openwrt-packages.git  package/openwrt-packa
 git clone https://github.com/kenzok8/small.git  package/openwrt-small
 # 获取luci-app-bypass
 git clone https://github.com/garypang13/luci-app-bypass.git package/bypass
-#git clone https://github.com/garypang13/openwrt-packages/tree/master/lua-maxminddb package/lua-maxminddb
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/lua-maxminddb
+svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns package/smartdns
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 # 获取luci-app-dnsfilter
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/dnsfilter
+# 获取luci-app-dockerman
+git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
 # 获取luci-app-serverchan
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 # 获取luci-app-poweroff
@@ -31,17 +36,18 @@ git clone https://github.com/destan19/OpenAppFilter.git package/oaf
 # git clone https://github.com/waynesg/luci-app-ipsec-vpnserver-manyusers.git package/luci-app-ipsec-vpnserver-manyusers
 # 获取luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/argon-config
-# 获取灵缇加速器
-# git clone https://github.com/BCYDTZ/LingTiGameAcc.git package/lingtigame
-# git clone https://github.com/BCYDTZ/luci-app-LingTiGameAcc.git package/luci-app-lingtigame
 # 获取KoolProxyR Plus+
-git clone https://github.com/godros/luci-app-godproxy.git package/ledeproxy
+git clone https://github.com/godros/luci-app-godproxy.git package/godproxy
+# 获取unblock网易音乐
+git clone https://github.com/immortalwrt/luci-app-unblockneteasemusic.git package/unblockneteasemusic
 # 获取高级设置
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/adv
 # 获取自动关机
 git clone https://github.com/sirpdboy/luci-app-autopoweroff.git package/autopwoff
-# 获取hello world和依赖
-git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
+# 获取opentopd主题
+git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/opentopd
+# 获取vssr和依赖
+# git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
 # git clone https://github.com/jerrykuku/luci-app-vssr package/diy-packages/helloworld/luci-app-vssr
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
