@@ -3,18 +3,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-#移除v2ray等
-rm -rf /package/lean/dns2socks
-rm -rf /package/lean/ipt2socks
-rm -rf /package/lean/kcptun
-rm -rf /package/lean/microsocks
-rm -rf /package/lean/shadowsocksr-libev
-rm -rf /package/lean/simple-obfs
-rm -rf /package/lean/tcping
-rm -rf /package/lean/trojan
-rm -rf /package/lean/v2ray
-rm -rf /package/lean/v2ray-plugin
-
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 # 获取passwall
