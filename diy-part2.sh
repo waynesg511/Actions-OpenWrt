@@ -14,8 +14,8 @@ git clone https://github.com/kenzok8/small.git  package/openwrt-small
 git clone https://github.com/garypang13/luci-app-bypass.git package/bypass
 svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/lua-maxminddb
 svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns package/smartdns
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
+sed -i 's/shadowsocksr-libev-alt/shadowsocksr-libev-ssr-redir/g' package/lean/*/Makefile
+sed -i 's/shadowsocksr-libev-server/shadowsocksr-libev-ssr-server/g' package/lean/*/Makefile
 
 # 获取luci-app-dnsfilter
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/dnsfilter
